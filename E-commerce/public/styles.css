@@ -1,0 +1,160 @@
+.welcome-title{
+    padding: 0px 20px;
+    font-size: 102px;
+    padding-top: 60px;
+    color:white;
+}
+
+.nexzy{
+background: linear-gradient(90deg, #11cf31, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+.welcome-description{
+    padding: 20px 0px 20px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.welcome-container-part2{
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, pink,lime);
+}
+
+.image-blend{
+    width:100%;
+    height:100%;
+    mix-blend-mode: screen;
+}
+
+body{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background: url("./secondSectionBg.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-section{
+    background: linear-gradient(to left, #c0392b, #8e44ad);
+    width: 100%;
+    height: 100%;
+    border: 0 0 5px black;
+    box-shadow: black 0px -5px 100px ;
+}
+
+.hr-align{
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+  }
+
+  .shine {
+    height: 20px;
+    width: 60%;
+    background-image: radial-gradient(
+      farthest-side at 50% -50%,
+      hsla(0, 0%, 0%, 0.5),
+      hsla(0, 0%, 0%, 0));
+    position: relative; 
+  }
+  
+  .shine::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      90deg,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0.75) 50%,
+      hsla(0, 0%, 0%, 0));
+  }
+
+  .product-page-container {
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+      linear-gradient(-225deg, #4CC3FF 0%, #7C64D5 48%, #FF057C 100%);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  min-height: 90vh; /* Make sure it takes the full screen height */
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow the cards to wrap to new lines */
+  justify-content: center; /* Center cards horizontally */
+  flex-grow:1;
+}
+
+.product-card-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-card-image:hover {
+  transform: scale(1.1);
+}
+
+.product-container
+{
+  background: url("./secondSection.jpg");
+  height: 100%;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.addContainer-bg {
+  background: url("./bg.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; /* Centers form vertically */
+  justify-content: center;
+}
+
+.form-placement {
+  display: flex;
+  flex-direction: row;
+  margin-top: -10px; /* Adjust this to control vertical placement */
+}
+
+
+.form-container{
+  display: flex;
+  flex-direction: row;
+  width:60vw;
+  height: 70vh;
+  overflow-y:auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-input{
+  border-radius: 3px;
+  border: none;
+}
+
+.card-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}

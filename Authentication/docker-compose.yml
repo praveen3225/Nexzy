@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+    app:  
+      build: .
+      ports:
+        - "3000:3000"
+      environment:
+        - DB_HOST=postgres
+        - DB_PORT=5432
+        - DB_NAME=Authentication
+        - DB_USER=postgres
+        - DB_PASSWORD=MSD183*
+      depends_on:
+        - postgres
+      networks:
+        - app-network
+
+    postgres:
+      image: registry.hub.docker.com/library/postgres:latest
+      environment:
+        POSTGRES_DB: Authentication
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: MSD183*
+      ports:
+        - "5434:5432"
+      volumes:
+        - postgres_data:/var/lib/postgresql/data  
+      networks:
+        - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:  
+
